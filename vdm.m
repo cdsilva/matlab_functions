@@ -9,7 +9,7 @@ if mod(dim, 1) ~= 0
     return
 end
 
-R2 = R;
+R2 = zeros(size(R));
 W2 = exp(-W/eps);
 W2 = diag(1./sum(W2)) * W2;
 
